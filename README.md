@@ -46,6 +46,25 @@ Compatible with all TOPPING USB DACs and amplifiers powered by XMOS / Thesycon:
 
 ---
 
+## 🌐 Official TOPPING Driver Sources & How to Search
+
+> **Important:** This repository and the downloadable ZIP release **already include** the latest official certified Thesycon driver (**v6.16.0 WHQL** inside the `Driver/` folder). You do **not** need to search for or download anything manually to get started!
+
+If you want to look for future updates or check official releases, use the following official portals:
+
+1. **Official TOPPING Portals:**
+   * **[Topping Audio Official Support](https://www.toppingaudio.com/support)** — Primary global support and downloads portal.
+   * **[TPDZ Legacy Download Mirror](https://www.tpdz.net/download)** — Official archive mirror for firmware and driver packages.
+2. **How to Find Drivers for Your Model:**
+   * Visit the support page and type your DAC model name into the search bar (e.g., `DX1`, `DX3 Pro+`, `E30 II`, `D10s`, `D90`).
+   * Navigate to the **Drivers & Software** tab on your product's page.
+   * Download the latest Windows driver archive (`TOPPING USB Audio Driver vX.X.X.zip`).
+   * *Note:* TOPPING uses a unified Thesycon driver across virtually all their USB DACs because they share the XMOS receiver architecture. A driver listed for `DX1` is identical to the one for `E30` or `D90`.
+3. **How to Keep New Drivers Clean:**
+   * If you install a newer official driver in the future, simply run **`Topping_Debloat_Tweak.bat`** immediately afterward to strip all tray bloatware and background Node.js servers, keeping the new kernel driver intact.
+
+---
+
 ## 📦 How to Use (Beginner Quick-Start Guide)
 
 ### Scenario A: Clean Windows Installation (Fresh PC)
