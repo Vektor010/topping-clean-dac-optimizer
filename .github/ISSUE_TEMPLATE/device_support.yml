@@ -1,0 +1,28 @@
+name: Device Compatibility Report
+description: Report test results for a TOPPING DAC model
+labels: [compatibility]
+body:
+  - type: input
+    id: device
+    attributes:
+      label: TOPPING Device Model
+      placeholder: e.g. D90 III Sabre
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Compatibility Status
+      options:
+        - Fully Working (Bit-Perfect PCM & DSD)
+        - Working (PCM only)
+        - Issues detected
+    validations:
+      required: true
+  - type: textarea
+    id: hw_id
+    attributes:
+      label: Hardware ID (VID & PID)
+      description: From Device Manager -> Details -> Hardware Ids (e.g., USB\VID_152A&PID_8750)
+    validations:
+      required: false

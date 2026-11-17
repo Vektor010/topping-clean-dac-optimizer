@@ -1,11 +1,11 @@
-# AI Agent & Developer Guidelines: TOPPING Clean DAC Optimizer
+# Universal AI Agent Guidelines: TOPPING Clean DAC Optimizer
 
-> **Purpose:** This document provides comprehensive architectural context, constraints, and instructions for any AI assistant (Claude, GPT, Gemini, Cursor, Copilot, Antigravity, Aider) or human developer continuing work on this project.
+> **Standard:** Universal Open Source Standard 2026 (AI + Human Continuation).  
+> **Target Audience:** Any AI assistant (Claude Code, ChatGPT, Gemini, Copilot, Cursor, Windsurf, Aider) or human developer contributing to this repository.
 
 ---
 
-## 1. Project Philosophy & Hardware Architecture
-
+## 1. Project Overview & Philosophy
 **TOPPING Clean DAC Optimizer** is an open-source, zero-overhead Windows audio driver packaging and optimization toolkit for **TOPPING USB Digital-to-Analog Converters (DACs)** powered by XMOS USB receiver chips and **Thesycon USB Audio Class 2.0 (UAC2)** kernel drivers.
 
 ### Core Problems Solved:
@@ -15,10 +15,10 @@
 
 ---
 
-## 2. Strict Project Boundaries & Safety Rules
+## 2. Invariants & Strict Rules
 
 1. **DRIVE RESTRICTIONS:**
-   - **NEVER** touch, write, read, or modify anything on the `D:` drive. Strictly operate within the active repository directory:
+   - **NEVER** touch, write, read, or modify anything on the `D:` drive under any circumstances. Strictly operate within the active repository directory:
      `C:\Users\User\Documents\AutoSettingsPS\Topping-Clean-DAC-Optimizer`
 2. **100% REVERSIBILITY:**
    - Every modification must be accompanied by an easy revert mechanism (`Restore_Default_Settings.bat` or menu option `[6]`).
@@ -27,37 +27,38 @@
 4. **POLYGLOT SCRIPT ARCHITECTURE:**
    - Keep scripts as single-file polyglots: Line 1 CMD batch launcher + Lines 2+ PowerShell executing with UTF-8 encoding.
    - Do NOT split into fragile multi-file dependencies unless necessary.
+5. **MANDATORY VERIFICATION BEFORE ASSERTIONS:**
+   - Never claim a task or bug fix is complete without running `tests/Run-AllTests.ps1` and confirming 100% pass output.
 
 ---
 
-## 3. Driver Architecture, OS Support & PnP IDs
+## 3. Single Source of Truth Documentation Map
 
-### Target Operating Systems:
-- **Windows 11**: 26H2, 25H2, 24H2, 23H2 (x64)
-- **Windows 10**: 22H2, 21H2 (x64)
-- **Architecture**: 64-bit native kernel with 32-bit WoW64 ASIO compatibility.
-
-### Thesycon Driver Packages:
-- **`ToppingUsbAudio.inf`**: Hardware ID `USB\VID_152A&PID_8750` (Class: `ToppingUsbAudio_sc`).
-- **`ToppingUsbAudioks.inf`**: Hardware ID `TUSBAUDIO_ENUM\VID_152A&PID_8750&KS` (Class: `Media`, Kernel Streaming).
-- Installation mechanism:
-  ```powershell
-  pnputil /add-driver "$PSScriptRoot\Driver\*.inf" /install
-  pnputil /scan-devices
-  ```
-- ASIO support:
-  - 64-bit: `ToppingUsbAudioasio_x64.dll` & `ToppingUsbAudioapi_x64.dll` in `System32` (registered via `regsvr32 /s`).
-  - 32-bit: `ToppingUsbAudioasio.dll` & `ToppingUsbAudioapi.dll` in `SysWOW64` (registered via `SysWOW64\regsvr32.exe /s`).
+| Document | Purpose |
+| :--- | :--- |
+| **[README.md](README.md)** | Primary international English product documentation |
+| **[README_RU.md](README_RU.md)** | Full parity Russian documentation |
+| **[ARCHITECTURE.md](ARCHITECTURE.md)** | System layers, kernel vs user-mode design, PnP identifiers |
+| **[PROJECT_STATE.md](PROJECT_STATE.md)** | Current release status, test logs, next tasks |
+| **[DECISIONS.md](DECISIONS.md)** | Architectural Decision Records (ADRs) |
+| **[KNOWN_ISSUES.md](KNOWN_ISSUES.md)** | Known hardware and OS quirks with workarounds |
+| **[ROADMAP.md](ROADMAP.md)** | 2026-2027 planned milestones and features |
+| **[DEVELOPMENT.md](DEVELOPMENT.md)** | Developer environment setup and build instructions |
+| **[CONTRIBUTING.md](CONTRIBUTING.md)** | Contribution standards and pull request guide |
+| **[SECURITY.md](SECURITY.md)** | Security disclosure policy and Authenticode verification |
 
 ---
 
-## 4. How to Update to Newer Drivers
+## 4. Essential Commands
 
-When a new driver release (e.g., v6.17+) is released:
-1. Export the newly installed driver from Windows DriverStore:
-   ```powershell
-   pnputil /export-driver * "$tempDir"
-   ```
-2. Filter for `toppingusbaudio*.inf`, `.sys`, and `.cat` files and copy to the `Driver/` folder.
-3. Verify Authenticode signatures with `Get-AuthenticodeSignature`.
-4. Update version strings across `README.md` and `README_RU.md`.
+```powershell
+# Run the complete test suite (AST Syntax + Authenticode Integrity)
+.\tests\Run-AllTests.ps1
+
+# Check Git Status
+git status
+
+# Build Release ZIP Package
+$files = Get-ChildItem -Path . -Exclude ".git", "*.zip"
+Compress-Archive -Path $files.FullName -DestinationPath "Topping-Clean-DAC-Optimizer-v1.0.0.zip" -Force
+```

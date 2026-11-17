@@ -1,0 +1,41 @@
+name: Bug Report
+description: Create a report to help us fix a script error or installation issue
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to report an issue!
+  - type: input
+    id: device_model
+    attributes:
+      label: TOPPING DAC Model
+      description: e.g. DX1, DX3 Pro+, E30 II, D10s, D50 III, D90, G5
+      placeholder: DX3 Pro+
+    validations:
+      required: true
+  - type: dropdown
+    id: os_version
+    attributes:
+      label: Windows Version
+      options:
+        - Windows 11 (26H2 / 25H2 / 24H2)
+        - Windows 11 (23H2 or older)
+        - Windows 10 (22H2 / 21H2)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: error_output
+    attributes:
+      label: Error Message / Terminal Output
+      description: Paste the exact output of the script or error dialog
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: What script did you run, and what happened?
+    validations:
+      required: true

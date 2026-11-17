@@ -1,0 +1,27 @@
+# Windows OS temporary files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editor and IDE configurations
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archives and build artifacts
+*.zip
+*.7z
+*.tar.gz
+*.bak
+*.tmp
+*.log
+
+# Test temporary outputs
+tests/temp/

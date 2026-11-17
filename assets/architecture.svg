@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="500" rx="16" fill="url(#bg2)"/>
+
+  <!-- Left: Bloated Vendor Architecture -->
+  <g transform="translate(40, 40)">
+    <rect width="420" height="420" rx="12" fill="#1e1e2e" stroke="#ef4444" stroke-width="2"/>
+    <text x="210" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#ef4444" text-anchor="middle">❌ Official Vendor Setup (Bloated)</text>
+    
+    <!-- Bloat node 1 -->
+    <rect x="30" y="70" width="360" height="60" rx="8" fill="#2d1b24" stroke="#f87171" stroke-width="1"/>
+    <text x="50" y="96" font-family="sans-serif" font-size="14" font-weight="700" fill="#fca5a5">TOPPING Home.exe (Node.js/Electron)</text>
+    <text x="50" y="116" font-family="sans-serif" font-size="12" fill="#f87171">Local Web Server (Port 27149) • ~100MB RAM</text>
+
+    <!-- Bloat node 2 -->
+    <rect x="30" y="150" width="360" height="60" rx="8" fill="#2d1b24" stroke="#f87171" stroke-width="1"/>
+    <text x="50" y="176" font-family="sans-serif" font-size="14" font-weight="700" fill="#fca5a5">ToppingUsbAudioCpl.exe (Tray)</text>
+    <text x="50" y="196" font-family="sans-serif" font-size="12" fill="#f87171">Startup Resident • Boot Error Popup Risk</text>
+
+    <!-- Bloat node 3 -->
+    <rect x="30" y="230" width="360" height="60" rx="8" fill="#2d1b24" stroke="#f87171" stroke-width="1"/>
+    <text x="50" y="256" font-family="sans-serif" font-size="14" font-weight="700" fill="#fca5a5">DPC Latency Jitter Spikes</text>
+    <text x="50" y="276" font-family="sans-serif" font-size="12" fill="#f87171">30s Periodic Audio Device Polling in Games</text>
+
+    <!-- Base driver -->
+    <rect x="30" y="320" width="360" height="70" rx="8" fill="#182234" stroke="#60a5fa" stroke-width="1"/>
+    <text x="210" y="350" font-family="sans-serif" font-size="14" font-weight="700" fill="#93c5fd" text-anchor="middle">Thesycon Kernel Driver (UAC2)</text>
+    <text x="210" y="372" font-family="sans-serif" font-size="12" fill="#60a5fa" text-anchor="middle">Physical Hardware Audio Playback</text>
+  </g>
+
+  <!-- Right: Clean Kernel Architecture -->
+  <g transform="translate(540, 40)">
+    <rect width="420" height="420" rx="12" fill="#0f231c" stroke="#22c55e" stroke-width="2"/>
+    <text x="210" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#22c55e" text-anchor="middle">✅ TOPPING Clean Optimizer (2026)</text>
+    
+    <!-- Clean node 1 -->
+    <rect x="30" y="70" width="360" height="60" rx="8" fill="#143827" stroke="#4ade80" stroke-width="1"/>
+    <text x="50" y="96" font-family="sans-serif" font-size="14" font-weight="700" fill="#86efac">0 MB RAM • 0 Background Processes</text>
+    <text x="50" y="116" font-family="sans-serif" font-size="12" fill="#4ade80">Zero Resident Services • Clean System Tray</text>
+
+    <!-- Clean node 2 -->
+    <rect x="30" y="150" width="360" height="60" rx="8" fill="#143827" stroke="#4ade80" stroke-width="1"/>
+    <text x="50" y="176" font-family="sans-serif" font-size="14" font-weight="700" fill="#86efac">Native Windows DriverStore (PnPUtil)</text>
+    <text x="50" y="196" font-family="sans-serif" font-size="12" fill="#4ade80">Direct Kernel Ingestion • Fast 2s Deployment</text>
+
+    <!-- Clean node 3 -->
+    <rect x="30" y="230" width="360" height="60" rx="8" fill="#143827" stroke="#4ade80" stroke-width="1"/>
+    <text x="50" y="256" font-family="sans-serif" font-size="14" font-weight="700" fill="#86efac">Pure ASIO &amp; WASAPI On-Demand</text>
+    <text x="50" y="276" font-family="sans-serif" font-size="12" fill="#4ade80">Bit-Perfect 32-bit / 768kHz • Native DSD512</text>
+
+    <!-- Base driver -->
+    <rect x="30" y="320" width="360" height="70" rx="8" fill="#182234" stroke="#60a5fa" stroke-width="1"/>
+    <text x="210" y="350" font-family="sans-serif" font-size="14" font-weight="700" fill="#93c5fd" text-anchor="middle">Thesycon Kernel Driver (v6.16.0 WHQL)</text>
+    <text x="210" y="372" font-family="sans-serif" font-size="12" fill="#60a5fa" text-anchor="middle">Lowest Possible Hardware DPC Latency</text>
+  </g>
+</svg>

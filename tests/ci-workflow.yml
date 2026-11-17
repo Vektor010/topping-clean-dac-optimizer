@@ -1,0 +1,26 @@
+name: CI - Syntax & Driver Integrity Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Master Test Suite
+        shell: powershell
+        run: |
+          .\tests\Run-AllTests.ps1
+
+      - name: Build Release Package
+        shell: powershell
+        run: |
+          $files = Get-ChildItem -Path . -Exclude ".git", "*.zip"
+          Compress-Archive -Path $files.FullName -DestinationPath "Topping-Clean-DAC-Optimizer-v1.0.0.zip" -Force
+          Get-Item "Topping-Clean-DAC-Optimizer-v1.0.0.zip" | Select-Object Name, Length
