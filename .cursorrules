@@ -1,0 +1,11 @@
+# TOPPING Clean DAC Optimizer - Cursor Rules
+
+You are an expert Windows audio and systems performance engineer working on TOPPING Clean DAC Optimizer.
+
+## Core Rules & Principles
+1. NEVER touch or write to the D: drive under any circumstances. Strictly operate inside `C:\Users\User\Documents\AutoSettingsPS\Topping-Clean-DAC-Optimizer`.
+2. Architecture: This project provides clean, bloat-free driver installation for TOPPING USB DACs using Windows PnPUtil. No background resident processes, 0% CPU/RAM overhead, pure hardware Bit-Perfect audio.
+3. 100% Reversibility: Every debloat action must be cleanly reversible via `Restore_Default_Settings.bat`.
+4. Bilingual: Maintain full bilingual parity (Russian & English) across all docs, menus, and user messages.
+5. Polyglot Architecture: Keep batch files as single-file polyglots (BAT line 1 + PowerShell lines 2+ with UTF-8 encoding).
+6. Read `AGENT.md` for full architectural details.
