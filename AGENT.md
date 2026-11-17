@@ -30,9 +30,14 @@
 
 ---
 
-## 3. Driver Architecture & PnP IDs
+## 3. Driver Architecture, OS Support & PnP IDs
 
-Thesycon driver packages consist of:
+### Target Operating Systems:
+- **Windows 11**: 26H2, 25H2, 24H2, 23H2 (x64)
+- **Windows 10**: 22H2, 21H2 (x64)
+- **Architecture**: 64-bit native kernel with 32-bit WoW64 ASIO compatibility.
+
+### Thesycon Driver Packages:
 - **`ToppingUsbAudio.inf`**: Hardware ID `USB\VID_152A&PID_8750` (Class: `ToppingUsbAudio_sc`).
 - **`ToppingUsbAudioks.inf`**: Hardware ID `TUSBAUDIO_ENUM\VID_152A&PID_8750&KS` (Class: `Media`, Kernel Streaming).
 - Installation mechanism:
