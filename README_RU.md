@@ -1,7 +1,7 @@
 # 🎵 TOPPING USB DAC: Оптимизатор и чистый драйвер (2026 Edition)
 
 <p align="center">
-  <img src="assets/banner.svg" alt="TOPPING Clean DAC Optimizer Banner" width="100%" />
+  <img src="assets/branding/banner.svg" alt="TOPPING Clean DAC Optimizer Banner" width="100%" />
 </p>
 
 <p align="center">
@@ -91,10 +91,10 @@
 ## 🏛️ Архитектура и сравнение с официальным стеком
 
 <p align="center">
-  <img src="assets/architecture.svg" alt="Сравнение Архитектуры" width="100%" />
+  <img src="assets/diagrams/architecture.svg" alt="Сравнение Архитектуры" width="100%" />
 </p>
 
-Подробное описание работы стека ядра Windows, идентификаторов PnP и отвязки ASIO от трея читайте в **[ARCHITECTURE.md](ARCHITECTURE.md)** и **[DECISIONS.md](DECISIONS.md)**.
+Подробное описание работы стека ядра Windows, идентификаторов PnP и отвязки ASIO от трея читайте в **[ARCHITECTURE.md](docs/architecture/ARCHITECTURE.md)** и **[DECISIONS.md](docs/architecture/DECISIONS.md)**.
 
 ---
 
@@ -156,15 +156,15 @@
 
 Для разработчиков, системных инженеров и ИИ-агентов:
 - **[AGENTS.md](AGENTS.md)** — Универсальные инструкции и инварианты для ИИ-ассистентов.
-- **[ARCHITECTURE.md](ARCHITECTURE.md)** — Архитектура драйвера ядра и интеграция с PnP.
-- **[PROJECT_STATE.md](PROJECT_STATE.md)** — Актуальное состояние, логи тестов и точки продолжения разработки.
-- **[DECISIONS.md](DECISIONS.md)** — Журнал архитектурных решений (ADR).
-- **[KNOWN_ISSUES.md](KNOWN_ISSUES.md)** — Известные особенности Windows/USB и их решения.
-- **[ROADMAP.md](ROADMAP.md)** — План развития на 2026–2027 годы.
-- **[DEVELOPMENT.md](DEVELOPMENT.md)** — Инструкция по сборке, тестированию и релизу.
-- **[CONTRIBUTING.md](CONTRIBUTING.md)** — Руководство по участию в разработке.
-- **[SECURITY.md](SECURITY.md)** — Политика безопасности и проверка цифровых подписей.
-- **[SUPPORT.md](SUPPORT.md)** — Помощь и диагностика неполадок.
+- **[ARCHITECTURE.md](docs/architecture/ARCHITECTURE.md)** — Архитектура драйвера ядра и интеграция с PnP.
+- **[PROJECT_STATE.md](docs/project/PROJECT_STATE.md)** — Актуальное состояние, логи тестов и точки продолжения разработки.
+- **[DECISIONS.md](docs/architecture/DECISIONS.md)** — Журнал архитектурных решений (ADR).
+- **[KNOWN_ISSUES.md](docs/guides/KNOWN_ISSUES.md)** — Известные особенности Windows/USB и их решения.
+- **[ROADMAP.md](docs/project/ROADMAP.md)** — План развития на 2026–2027 годы.
+- **[DEVELOPMENT.md](docs/development/DEVELOPMENT.md)** — Инструкция по сборке, тестированию и релизу.
+- **[CONTRIBUTING.md](docs/development/CONTRIBUTING.md)** — Руководство по участию в разработке.
+- **[SECURITY.md](docs/security/SECURITY.md)** — Политика безопасности и проверка цифровых подписей.
+- **[SUPPORT.md](docs/guides/SUPPORT.md)** — Помощь и диагностика неполадок.
 
 ---
 

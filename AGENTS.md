@@ -34,18 +34,20 @@
 
 ## 3. Single Source of Truth Documentation Map
 
-| Document | Purpose |
-| :--- | :--- |
-| **[README.md](README.md)** | Primary international English product documentation |
-| **[README_RU.md](README_RU.md)** | Full parity Russian documentation |
-| **[ARCHITECTURE.md](ARCHITECTURE.md)** | System layers, kernel vs user-mode design, PnP identifiers |
-| **[PROJECT_STATE.md](PROJECT_STATE.md)** | Current release status, test logs, next tasks |
-| **[DECISIONS.md](DECISIONS.md)** | Architectural Decision Records (ADRs) |
-| **[KNOWN_ISSUES.md](KNOWN_ISSUES.md)** | Known hardware and OS quirks with workarounds |
-| **[ROADMAP.md](ROADMAP.md)** | 2026-2027 planned milestones and features |
-| **[DEVELOPMENT.md](DEVELOPMENT.md)** | Developer environment setup and build instructions |
-| **[CONTRIBUTING.md](CONTRIBUTING.md)** | Contribution standards and pull request guide |
-| **[SECURITY.md](SECURITY.md)** | Security disclosure policy and Authenticode verification |
+| Document | Purpose | Exact Path |
+| :--- | :--- | :--- |
+| **[README.md](README.md)** | Primary international English product documentation | `README.md` |
+| **[README_RU.md](README_RU.md)** | Full parity Russian documentation | `README_RU.md` |
+| **[ARCHITECTURE.md](docs/architecture/ARCHITECTURE.md)** | System layers, kernel vs user-mode design, PnP identifiers | `docs/architecture/ARCHITECTURE.md` |
+| **[DECISIONS.md](docs/architecture/DECISIONS.md)** | Architectural Decision Records (ADRs) | `docs/architecture/DECISIONS.md` |
+| **[DEVELOPMENT.md](docs/development/DEVELOPMENT.md)** | Developer environment setup and build instructions | `docs/development/DEVELOPMENT.md` |
+| **[CONTRIBUTING.md](docs/development/CONTRIBUTING.md)** | Contribution standards and pull request guide | `docs/development/CONTRIBUTING.md` |
+| **[KNOWN_ISSUES.md](docs/guides/KNOWN_ISSUES.md)** | Known hardware and OS quirks with workarounds | `docs/guides/KNOWN_ISSUES.md` |
+| **[SUPPORT.md](docs/guides/SUPPORT.md)** | Troubleshooting and device support | `docs/guides/SUPPORT.md` |
+| **[PROJECT_STATE.md](docs/project/PROJECT_STATE.md)** | Current release status, test logs, next tasks | `docs/project/PROJECT_STATE.md` |
+| **[ROADMAP.md](docs/project/ROADMAP.md)** | 2026-2027 planned milestones and features | `docs/project/ROADMAP.md` |
+| **[CHANGELOG.md](docs/project/CHANGELOG.md)** | Version history and notable changes | `docs/project/CHANGELOG.md` |
+| **[SECURITY.md](docs/security/SECURITY.md)** | Security disclosure policy and Authenticode verification | `docs/security/SECURITY.md` |
 
 ---
 

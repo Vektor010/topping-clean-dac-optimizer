@@ -1,7 +1,7 @@
 # 🎵 TOPPING USB DAC: Clean Optimizer & Bloatware Remover (2026 Edition)
 
 <p align="center">
-  <img src="assets/banner.svg" alt="TOPPING Clean DAC Optimizer Banner" width="100%" />
+  <img src="assets/branding/banner.svg" alt="TOPPING Clean DAC Optimizer Banner" width="100%" />
 </p>
 
 <p align="center">
@@ -91,10 +91,10 @@ All TOPPING DACs (from entry-level DX1 to flagship D90) use the same **XMOS USB 
 ## 🏛️ Architecture & System Comparison
 
 <p align="center">
-  <img src="assets/architecture.svg" alt="Architecture Comparison Diagram" width="100%" />
+  <img src="assets/diagrams/architecture.svg" alt="Architecture Comparison Diagram" width="100%" />
 </p>
 
-For a full technical breakdown of the Windows kernel audio subsystem, PnP identifiers, and user-mode decoupling, read **[ARCHITECTURE.md](ARCHITECTURE.md)** and **[DECISIONS.md](DECISIONS.md)**.
+For a full technical breakdown of the Windows kernel audio subsystem, PnP identifiers, and user-mode decoupling, read **[ARCHITECTURE.md](docs/architecture/ARCHITECTURE.md)** and **[DECISIONS.md](docs/architecture/DECISIONS.md)**.
 
 ---
 
@@ -156,15 +156,15 @@ Compatible with all generations of TOPPING USB DACs and headphone amplifiers:
 
 For contributors, system engineers, and AI coding agents:
 - **[AGENTS.md](AGENTS.md)** — Universal instructions and constraints for AI coding agents.
-- **[ARCHITECTURE.md](ARCHITECTURE.md)** — Deep dive into the kernel driver stack and PnP mechanisms.
-- **[PROJECT_STATE.md](PROJECT_STATE.md)** — Living project status, test logs, and handoff state.
-- **[DECISIONS.md](DECISIONS.md)** — Architectural Decision Records (ADRs).
-- **[KNOWN_ISSUES.md](KNOWN_ISSUES.md)** — Known quirks and troubleshooting workarounds.
-- **[ROADMAP.md](ROADMAP.md)** — Future development milestones and features.
-- **[DEVELOPMENT.md](DEVELOPMENT.md)** — Build and test guide.
-- **[CONTRIBUTING.md](CONTRIBUTING.md)** — Contribution and PR guidelines.
-- **[SECURITY.md](SECURITY.md)** — Security policy and signature validation.
-- **[SUPPORT.md](SUPPORT.md)** — Troubleshooting and device support.
+- **[ARCHITECTURE.md](docs/architecture/ARCHITECTURE.md)** — Deep dive into the kernel driver stack and PnP mechanisms.
+- **[PROJECT_STATE.md](docs/project/PROJECT_STATE.md)** — Living project status, test logs, and handoff state.
+- **[DECISIONS.md](docs/architecture/DECISIONS.md)** — Architectural Decision Records (ADRs).
+- **[KNOWN_ISSUES.md](docs/guides/KNOWN_ISSUES.md)** — Known quirks and troubleshooting workarounds.
+- **[ROADMAP.md](docs/project/ROADMAP.md)** — Future development milestones and features.
+- **[DEVELOPMENT.md](docs/development/DEVELOPMENT.md)** — Build and test guide.
+- **[CONTRIBUTING.md](docs/development/CONTRIBUTING.md)** — Contribution and PR guidelines.
+- **[SECURITY.md](docs/security/SECURITY.md)** — Security policy and signature validation.
+- **[SUPPORT.md](docs/guides/SUPPORT.md)** — Troubleshooting and device support.
 
 ---
 

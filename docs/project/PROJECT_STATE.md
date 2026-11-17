@@ -22,9 +22,10 @@
   - `tests/Run-AllTests.ps1`: Unified runner script (100% pass rate).
 - **Universal Documentation & Handoff Standard:**
   - `README.md` & `README_RU.md` with 2026 Edition styling, download badges, architecture diagrams, official links, and comparison matrices.
-  - `AGENTS.md`, `ARCHITECTURE.md`, `DECISIONS.md`, `KNOWN_ISSUES.md`, `ROADMAP.md`, `DEVELOPMENT.md`, `CONTRIBUTING.md`, `SECURITY.md`, `SUPPORT.md`, `CHANGELOG.md`.
-  - Visual assets: `assets/banner.svg`, `assets/architecture.svg`.
-  - GitHub issue templates, PR template, and GitHub Actions CI workflow.
+  - `AGENTS.md` in root with comprehensive documentation map.
+  - Organized modular docs: `docs/architecture/` (ARCHITECTURE, DECISIONS), `docs/development/` (DEVELOPMENT, CONTRIBUTING), `docs/guides/` (SUPPORT, KNOWN_ISSUES), `docs/project/` (PROJECT_STATE, ROADMAP, CHANGELOG), `docs/security/` (SECURITY).
+  - Visual assets: `assets/branding/banner.svg`, `assets/diagrams/architecture.svg`.
+  - GitHub issue templates, PR template, and GitHub Actions CI workflow specification.
 
 ---
 
