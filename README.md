@@ -1,11 +1,20 @@
 # 🎵 TOPPING USB DAC: Clean Optimizer & Bloatware Remover
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Windows-10%20%7C%2011%20(24H2%20Ready)-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows Compatibility" />
-  <img src="https://img.shields.io/badge/Driver-Thesycon%20v6.16.0%20WHQL-28a745?style=for-the-badge&logo=soundcharts&logoColor=white" alt="Driver Version" />
-  <img src="https://img.shields.io/badge/Background%20RAM-0%20MB-brightgreen?style=for-the-badge" alt="0 MB RAM" />
-  <img src="https://img.shields.io/badge/Audio-Bit--Perfect%2032bit%2F768kHz-blue?style=for-the-badge" alt="Bit-Perfect Audio" />
-  <img src="https://img.shields.io/badge/Language-English%20%7C%20Русский-orange?style=for-the-badge" alt="Bilingual" />
+  <a href="https://github.com/Vektor010/topping-clean-dac-optimizer/releases/download/v1.0.0/Topping-Clean-DAC-Optimizer-v1.0.0.zip">
+    <img src="https://img.shields.io/badge/DOWNLOAD_READY_RELEASE_(v1.0.0)-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="Download Release" height="38" />
+  </a>
+  <a href="https://github.com/Vektor010/topping-clean-dac-optimizer/releases">
+    <img src="https://img.shields.io/badge/RELEASES_PAGE-0078D6?style=for-the-badge&logo=github&logoColor=white" alt="Releases" height="38" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Windows-10%20%7C%2011%20(24H2%20Ready)-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows Compatibility" />
+  <img src="https://img.shields.io/badge/Driver-Thesycon%20v6.16.0%20WHQL-28a745?style=flat-square&logo=soundcharts&logoColor=white" alt="Driver Version" />
+  <img src="https://img.shields.io/badge/Background%20RAM-0%20MB-brightgreen?style=flat-square" alt="0 MB RAM" />
+  <img src="https://img.shields.io/badge/Audio-Bit--Perfect%2032bit%2F768kHz-blue?style=flat-square" alt="Bit-Perfect Audio" />
+  <img src="https://img.shields.io/badge/Language-English%20%7C%20Русский-orange?style=flat-square" alt="Bilingual" />
 </p>
 
 ---
@@ -16,92 +25,123 @@
 
 ---
 
-## ⚡ The Problem with Official TOPPING Installers
-When downloading the official driver package from TOPPING's website, the installer bundles heavy and unnecessary software that permanently runs on your PC:
+## ⚡ QUICK START FOR BEGINNERS (30 Seconds)
 
-1. **`TOPPING Home.exe`** — A background web server based on **Node.js, Next.js, and Electron**. It occupies port `27149`, creates scheduled tasks, constantly scans audio streams every 30 seconds, and consumes system RAM and CPU cycles.
-2. **`ToppingUsbAudioCpl.exe`** — A persistent system tray application that auto-starts with Windows. If any config file gets corrupted, it triggers startup error dialog popups on every boot.
-3. **Background Latency Spikes** — Persistent polling services compete with games and audio playback for CPU execution time.
-
----
-
-## 🚀 The Solution: 100% Pure Hardware Audio
-**TOPPING Clean DAC Optimizer** extracts and installs **ONLY** the official, certified **Thesycon kernel drivers** directly into the native Windows `DriverStore` using standard Windows `PnPUtil`.
-
-### Key Benefits:
-* **0% Background CPU & 0 MB RAM:** Absolutely zero background processes, daemons, or resident tray icons.
-* **100% Bit-Perfect Audio:** Supports all native sample rates up to **32-bit / 768 kHz** and native **DSD512**.
-* **Clean ASIO Support:** Includes pure ASIO libraries for Foobar2000, AIMP, Cubase, FL Studio, and DAWs without tray bloatware.
-* **Zero Boot Errors:** Nothing runs on startup, so nothing can crash or show error dialogs.
-* **100% Reversible:** Restore the standard tray icon or uninstall drivers anytime with 1 click.
+### 📥 Step 1: Download the Ready Package
+* **[👉 Click here to download `Topping-Clean-DAC-Optimizer-v1.0.0.zip` (870 KB)](https://github.com/Vektor010/topping-clean-dac-optimizer/releases/download/v1.0.0/Topping-Clean-DAC-Optimizer-v1.0.0.zip)**
+* Extract the ZIP archive anywhere on your PC (e.g. Downloads or Desktop).
 
 ---
 
-## 🎯 Supported Devices
-Compatible with all TOPPING USB DACs and amplifiers powered by XMOS / Thesycon:
-* **DX Series:** DX1, DX3 Pro+, DX5, DX7 Pro, DX9
-* **E / L Series:** E30, E30 II, E50, E70, E70 Velvet
+### 🎯 Step 2: Choose Your Scenario:
+
+#### Scenario A: You ALREADY installed TOPPING software and want to remove the tray icon & background bloatware
+1. Open the extracted folder.
+2. Double-click **`Topping_Debloat_Tweak.bat`**.
+3. **Result:**
+   * The control panel icon immediately disappears from your system tray.
+   * The heavy background `TOPPING Home.exe` server is terminated and removed from Windows Startup.
+   * **Your audio continues playing at 100% bit-perfect quality without rebooting.**
+
+#### Scenario B: You REINSTALLED WINDOWS (Clean PC)
+1. Plug your TOPPING DAC into any USB port.
+2. Run **`Install_Clean_Driver.bat`** (it will automatically ask for Administrator rights).
+3. **Result:**
+   * In 2 seconds, Windows `PnPUtil` registers the genuine certified driver directly into the Windows kernel `DriverStore`.
+   * No reboot required — audio starts working immediately with full 32-bit / 768 kHz and DSD support.
+   * Zero tray icons and zero background processes are installed.
+
+#### Scenario C: You want an interactive menu with diagnostics and controls
+1. Run **`Topping_DAC_Manager.bat`**.
+2. An interactive bilingual console provides DAC connection checks, latency tests, 1-time buffer adjustments, driver exports, and instant rollbacks.
+
+---
+
+## 🔍 WHERE TO FIND OFFICIAL TOPPING DRIVERS?
+
+> 💡 **IMPORTANT:** This repository and download archive **already bundle** the official certified latest driver (**Thesycon v6.16.0 WHQL** in the `Driver/` folder). You **do not need to search or download anything from the web** to get your DAC working right now!
+
+If you want to verify the manufacturer's site or check for updates in the future, here are the direct official links:
+
+### 🌐 Official Manufacturer Portals:
+1. **Primary Global Support & Downloads Portal:**  
+   👉 **[https://www.toppingaudio.com/support](https://www.toppingaudio.com/support)**
+2. **Official Archive & Download Mirror:**  
+   👉 **[https://www.tpdz.net/download](https://www.tpdz.net/download)**
+
+---
+
+### 📝 Step-by-Step Guide: How to Find Your DAC's Driver:
+```
+1. Open: https://www.toppingaudio.com/support
+2. In the center search box, enter your DAC model name:
+   -> For example: DX1, DX3 Pro+, E30 II, D10s, D50 III, D70, D90, G5
+3. Click your device card in the search results.
+4. Go to the "Drivers & Software" tab.
+5. Click "Download" next to:
+   "TOPPING USB Audio Driver (Windows 10/11)"
+```
+
+#### 🔑 The TOPPING Driver Secret (Why One Driver Fits All Models):
+All TOPPING DACs (from entry-level DX1 to flagship D90) use the same **XMOS USB receiver** and licensed driver engine from German company **Thesycon GmbH** (Hardware ID `VID_152A`).
+* This means **the driver package is 100% identical across all models**!
+* Downloading the driver for DX1 gives you the exact same driver files as for E30 or D90.
+
+---
+
+## ⚡ WHAT'S WRONG WITH THE OFFICIAL INSTALLER?
+
+When installing the vendor package from the official site, it installs heavy background bloatware onto your PC:
+1. **`TOPPING Home.exe`** — A heavy local web server powered by **Node.js, Next.js, and Electron**. It listens on port `27149`, registers a scheduled autostart task, scans Windows audio streams every 30 seconds, and wastes RAM and CPU cycles.
+2. **`ToppingUsbAudioCpl.exe`** — A resident system tray utility in Windows Startup. If any config file gets corrupted or deleted, it crashes on every boot with error popups (`Failed to open application configuration file`).
+3. **Micro-stutters in Games** — Continuous audio endpoint polling can cause micro-latency spikes in competitive gaming (CS2, Valorant, Apex Legends).
+
+### Our Solution:
+We stripped all bloatware and preserved **only the pure Thesycon kernel driver** (`.inf`, `.sys`, `.cat`), installed directly into Windows `DriverStore`.
+
+---
+
+## 📊 Comparison: Official Topping Setup vs Our Tweak
+
+| Feature | Official TOPPING Setup | TOPPING Clean Optimizer |
+| :--- | :---: | :---: |
+| **Bit-Perfect Audio (32-bit / 768 kHz)** | ✅ Yes | ✅ **Yes (100% identical)** |
+| **DSD Support (DSD64 - DSD512)** | ✅ Yes | ✅ **Yes** |
+| **ASIO / WASAPI / DirectSound** | ✅ Yes | ✅ **Yes** |
+| **Kernel Driver Engine** | Thesycon v6.16.0 | **Thesycon v6.16.0 (WHQL)** |
+| **Background Processes in Task Manager** | ❌ 2–3 processes | ✅ **0 processes** |
+| **Memory Footprint (RAM)** | ❌ ~50–150 MB | ✅ **0 MB** |
+| **System Tray Icon** | ❌ Always present | ✅ **Clean tray (No icon)** |
+| **Background Node.js Web Server** | ❌ Active on port 27149 | ✅ **Disabled** |
+| **Boot Error Dialog Risk** | ❌ Possible on config corruption | ✅ **0% (Nothing to crash)** |
+
+---
+
+## 📁 File Structure (What's Inside the Archive)
+
+| File / Folder | Purpose |
+| :--- | :--- |
+| **`Topping_Debloat_Tweak.bat`** | **Primary 1-Click Tweak.** Closes tray icon, kills Node.js server, and removes them from startup. |
+| **`Install_Clean_Driver.bat`** | **Clean Driver Installer.** For fresh Windows installs. Installs pure driver in 2 seconds. |
+| **`Topping_DAC_Manager.bat`** | **Interactive Manager.** Diagnostics, latency test, 1-time buffer change, backup, and rollback. |
+| **`Restore_Default_Settings.bat`** | **1-Click Rollback.** Restores standard tray panel and autostart if ever needed. |
+| **`Driver/`** | Certified genuine Thesycon kernel driver files (`.inf`, `.sys`, `.cat`). |
+| **`ASIO/`** | Pure ASIO direct output libraries for Foobar2000, AIMP, Cubase, FL Studio. |
+
+---
+
+## 🎯 Supported TOPPING Devices
+Works with all TOPPING USB DACs and headphone amplifiers:
+* **DX Series:** DX1, DX3 Pro+, DX5, DX5 Lite, DX7 Pro, DX7 Pro+, DX9
+* **E / L Series:** E30, E30 II, E30 II Lite, E50, E70, E70 Velvet
 * **D Series:** D10, D10s, D10 Balanced, D50, D50s, D50 III, D70, D70 Pro, D90, D90SE, D90 III
 * **Portable Series:** G5, NX4 DSD
 
 ---
 
-## 🌐 Official TOPPING Driver Sources & How to Search
-
-> **Important:** This repository and the downloadable ZIP release **already include** the latest official certified Thesycon driver (**v6.16.0 WHQL** inside the `Driver/` folder). You do **not** need to search for or download anything manually to get started!
-
-If you want to look for future updates or check official releases, use the following official portals:
-
-1. **Official TOPPING Portals:**
-   * **[Topping Audio Official Support](https://www.toppingaudio.com/support)** — Primary global support and downloads portal.
-   * **[TPDZ Legacy Download Mirror](https://www.tpdz.net/download)** — Official archive mirror for firmware and driver packages.
-2. **How to Find Drivers for Your Model:**
-   * Visit the support page and type your DAC model name into the search bar (e.g., `DX1`, `DX3 Pro+`, `E30 II`, `D10s`, `D90`).
-   * Navigate to the **Drivers & Software** tab on your product's page.
-   * Download the latest Windows driver archive (`TOPPING USB Audio Driver vX.X.X.zip`).
-   * *Note:* TOPPING uses a unified Thesycon driver across virtually all their USB DACs because they share the XMOS receiver architecture. A driver listed for `DX1` is identical to the one for `E30` or `D90`.
-3. **How to Keep New Drivers Clean:**
-   * If you install a newer official driver in the future, simply run **`Topping_Debloat_Tweak.bat`** immediately afterward to strip all tray bloatware and background Node.js servers, keeping the new kernel driver intact.
-
----
-
-## 📦 How to Use (Beginner Quick-Start Guide)
-
-### Scenario A: Clean Windows Installation (Fresh PC)
-1. Download the latest release: **[TOPPING-Clean-DAC-Optimizer.zip](https://github.com/Vektor010/topping-clean-dac-optimizer/releases/latest)**.
-2. Plug your TOPPING DAC into any USB port.
-3. Right-click **`Install_Clean_Driver.bat`** and choose **Run as Administrator** (or double-click; it will auto-request admin rights).
-4. Done! The driver registers directly into Windows within 2 seconds. No reboot required.
-
-### Scenario B: You Already Installed Full TOPPING Software & Want to Clean It Up
-1. Double-click **`Topping_Debloat_Tweak.bat`**.
-2. It instantly kills `TOPPING Home.exe` and `ToppingUsbAudioCpl.exe`, deletes them from Windows Startup, and disables scheduled tasks.
-3. Your music and audio continue playing uninterrupted!
-
-### Scenario C: Advanced Management (Bilingual Manager)
-Launch **`Topping_DAC_Manager.bat`** to access an interactive menu:
-* `[1]` Instant Debloat & Tray Remover.
-* `[2]` Clean Kernel Driver Install.
-* `[3]` Export Clean Driver from current Windows to portable backup folder.
-* `[4]` Live Diagnostics & Hardware Audio Endpoint status.
-* `[5]` Open Control Panel once (to adjust ASIO buffer size if needed).
-* `[6]` Restore Tray Autostart (Revert tweak).
-* `[7]` Complete Driver Uninstall.
-* `[L]` Switch language (English ↔ Русский).
-
----
-
-## 📊 Comparison Matrix
-
-| Feature | Official TOPPING Setup | TOPPING Clean Optimizer |
-| :--- | :---: | :---: |
-| **Bit-Perfect 32-bit / 768 kHz Sound** | ✅ Yes | ✅ **Yes (100% identical)** |
-| **Native ASIO / WASAPI / DirectSound** | ✅ Yes | ✅ **Yes** |
-| **Driver Engine** | Thesycon v6.16.0 | **Thesycon v6.16.0 (Certified WHQL)** |
-| **Resident Background Processes** | ❌ 2–3 processes | ✅ **0 processes** |
-| **Memory Footprint (RAM)** | ❌ ~50–150 MB | ✅ **0 MB** |
-| **System Tray Icon** | ❌ Always running | ✅ **Clean (No icon)** |
-| **Background Web Server** | ❌ Node.js on port 27149 | ✅ **Disabled** |
+## 🔄 100% Reversible and Safe
+Every change made by this toolkit is completely reversible:
+* Simply run **`Restore_Default_Settings.bat`** (or choose menu item `[6]` in `Topping_DAC_Manager.bat`) to bring back the tray icon and startup entries at any time.
 
 ---
 
