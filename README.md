@@ -1,4 +1,4 @@
-# 🎵 TOPPING USB DAC: Clean Optimizer & Bloatware Remover (2026 Edition)
+﻿# рџЋµ TOPPING USB DAC: Clean Optimizer & Bloatware Remover (2026 Edition)
 
 <p align="center">
   <img src="assets/branding/banner.svg" alt="TOPPING Clean DAC Optimizer Banner" width="100%" />
@@ -24,9 +24,9 @@
 
 ---
 
-## 📖 Languages / Языки
-* 🇺🇸 **[English](README.md)** (Current)
-* 🇷🇺 **[Русская версия](README_RU.md)**
+## рџ“– Languages / РЇР·С‹РєРё
+* рџ‡єрџ‡ё **[English](README.md)** (Current)
+* рџ‡·рџ‡є **[Р СѓСЃСЃРєР°СЏ РІРµСЂСЃРёСЏ](README_RU.md)**
 
 ---
 
@@ -35,25 +35,25 @@
 
 ---
 
-## ⚡ QUICK START FOR BEGINNERS (30 Seconds)
+## вљЎ QUICK START FOR BEGINNERS (30 Seconds)
 
-### 📥 Step 1: Download the Ready Package
-* **[👉 Click here to download Topping-Clean-DAC-Optimizer-v1.0.0.zip (875 KB)](https://github.com/Vektor010/topping-clean-dac-optimizer/releases/download/v1.0.0/Topping-Clean-DAC-Optimizer-v1.0.0.zip)**
+### рџ“Ґ Step 1: Download the Ready Package
+* **[рџ‘‰ Click here to download Topping-Clean-DAC-Optimizer-v1.0.0.zip (875 KB)](https://github.com/Vektor010/topping-clean-dac-optimizer/releases/download/v1.0.0/Topping-Clean-DAC-Optimizer-v1.0.0.zip)**
 * Extract the ZIP archive anywhere on your computer (e.g., Downloads or Desktop).
 
 ---
 
-### 🎯 Step 2: Choose Your Scenario:
+### рџЋЇ Step 2: Choose Your Scenario:
 
 | Scenario | What to Run | What Happens |
 | :--- | :--- | :--- |
-| 🟢 **Scenario A:** TOPPING software is already installed, but runs in the background & tray | Double-click<br>**`Topping_Debloat_Tweak.bat`** | The tray icon instantly vanishes, the `TOPPING Home.exe` server is terminated and removed from startup. Your music keeps playing at 100% bit-perfect quality without rebooting. |
-| 🔵 **Scenario B:** Clean Windows install (11 26H2 / 25H2 / 24H2 or 10) | Run as Administrator<br>**`Install_Clean_Driver.bat`** | Windows `PnPUtil` registers the genuine certified driver directly into the kernel DriverStore within 2 seconds. Audio works immediately with zero bloatware and clean tray. |
-| 🟣 **Scenario C:** Interactive console with live diagnostics & tweaks | Run<br>**`Topping_DAC_Manager.bat`** | Bilingual interactive menu: DAC hardware status check, latency diagnostics, 1-time ASIO buffer adjuster, driver backup export, and 1-click restore. |
+| рџџў **Scenario A:** TOPPING software is already installed, but runs in the background & tray | Double-click<br>**`Topping_Debloat_Tweak.bat`** | The tray icon instantly vanishes, the `TOPPING Home.exe` server is terminated and removed from startup. Your music keeps playing at 100% bit-perfect quality without rebooting. |
+| рџ”µ **Scenario B:** Clean Windows install (11 26H2 / 25H2 / 24H2 or 10) | Run as Administrator<br>**`Install_Clean_Driver.bat`** | Windows `PnPUtil` registers the genuine certified driver directly into the kernel DriverStore within 2 seconds. Audio works immediately with zero bloatware and clean tray. |
+| рџџЈ **Scenario C:** Interactive console with live diagnostics & tweaks | Run<br>**`Topping_DAC_Manager.bat`** | Bilingual interactive menu: DAC hardware status check, latency diagnostics, 1-time ASIO buffer adjuster, driver backup export, and 1-click restore. |
 
 ---
 
-## 🔍 WHERE & HOW TO FIND OFFICIAL TOPPING DRIVERS?
+## рџ”Ќ WHERE & HOW TO FIND OFFICIAL TOPPING DRIVERS?
 
 > [!TIP]
 > **You do not need to download anything from the web right now!**  
@@ -61,34 +61,34 @@
 
 If you ever want to check the manufacturer's website or download future updates, here are the direct official links:
 
-### 🌐 Official Manufacturer Portals:
-* 🔗 **Primary Global Support Portal:**  
-  👉 **[https://www.toppingaudio.com/support](https://www.toppingaudio.com/support)**
-* 🔗 **Official Archive & Download Mirror:**  
-  👉 **[https://www.tpdz.net/download](https://www.tpdz.net/download)**
+### рџЊђ Official Manufacturer Portals:
+* рџ”— **Primary Global Support Portal:**  
+  рџ‘‰ **[https://www.toppingaudio.com/support](https://www.toppingaudio.com/support)**
+* рџ”— **Official Archive & Download Mirror:**  
+  рџ‘‰ **[https://www.tpdz.net/download](https://www.tpdz.net/download)**
 
 ---
 
-### 📝 Step-by-Step Search Walkthrough:
+### рџ“ќ Step-by-Step Search Walkthrough:
 
 ```text
-1️⃣ Open: https://www.toppingaudio.com/support
-2️⃣ In the center search box, type your DAC model name:
+1пёЏвѓЈ Open: https://www.toppingaudio.com/support
+2пёЏвѓЈ In the center search box, type your DAC model name:
    -> For example: DX1, DX3 Pro+, E30 II, D10s, D50 III, D70 Pro, D90 III, G5
-3️⃣ Click your device card from the search results.
-4️⃣ Navigate to the "Drivers & Software" tab.
-5️⃣ Click "Download" next to:
+3пёЏвѓЈ Click your device card from the search results.
+4пёЏвѓЈ Navigate to the "Drivers & Software" tab.
+5пёЏвѓЈ Click "Download" next to:
    "TOPPING USB Audio Driver (Windows 10/11)".
 ```
 
-#### 🔑 The TOPPING Driver Secret (Why One Driver Fits All Models):
+#### рџ”‘ The TOPPING Driver Secret (Why One Driver Fits All Models):
 All TOPPING DACs (from entry-level DX1 to flagship D90) use the same **XMOS USB receiver** and licensed driver engine from German company **Thesycon GmbH** (Hardware ID `VID_152A`).
 * **The kernel driver package is 100% identical across all models!**
 * Downloading the driver for DX1 gives you the exact same driver files as for E30 or D90.
 
 ---
 
-## 🏛️ Architecture & System Comparison
+## рџЏ›пёЏ Architecture & System Comparison
 
 <p align="center">
   <img src="assets/diagrams/architecture.svg" alt="Architecture Comparison Diagram" width="100%" />
@@ -98,52 +98,52 @@ For a full technical breakdown of the Windows kernel audio subsystem, PnP identi
 
 ---
 
-## 📊 Benchmarks & Resource Comparison
+## рџ“Љ Benchmarks & Resource Comparison
 
 Real metrics measured on Windows 11 (Build 26100+) with TOPPING USB DAC:
 
 | Metric | Official TOPPING Setup | TOPPING Clean Optimizer | Advantage |
 | :--- | :---: | :---: | :---: |
 | **RAM Footprint (User-Mode)** | ~103.2 MB | **0.0 MB** | **100% Freed** |
-| **Active Background Processes** | 2–3 processes | **0 processes** | **Clean Task Manager** |
+| **Active Background Processes** | 2вЂ“3 processes | **0 processes** | **Clean Task Manager** |
 | **Open Local Ports** | TCP 27149 (Node.js) | **0 ports** | **Zero Network Surface** |
 | **System Tray Clutter** | Persistent Icon | **Clean Tray** | **No Visual Noise** |
-| **Audio DPC Latency Spikes** | ~180–320 µs (Polling) | **~15–25 µs (Kernel)** | **No Micro-Stutters** |
-| **Bit-Perfect 32-bit / 768 kHz** | ✅ Supported | ✅ **Supported** | **100% Identical** |
-| **Native DSD512 Support** | ✅ Supported | ✅ **Supported** | **100% Identical** |
+| **Audio DPC Latency Spikes** | ~180вЂ“320 Вµs (Polling) | **~15вЂ“25 Вµs (Kernel)** | **No Micro-Stutters** |
+| **Bit-Perfect 32-bit / 768 kHz** | вњ… Supported | вњ… **Supported** | **100% Identical** |
+| **Native DSD512 Support** | вњ… Supported | вњ… **Supported** | **100% Identical** |
 
 Full benchmark methodology and measurements available in **[benchmarks/BENCHMARKS.md](benchmarks/BENCHMARKS.md)**.
 
 ---
 
-## 📁 File Structure (What's Inside the Archive)
+## рџ“Ѓ File Structure (What's Inside the Archive)
 
 | File / Folder | Purpose |
 | :--- | :--- |
-| **`Topping_Debloat_Tweak.bat`** | 🟢 **Primary 1-Click Tweak.** Closes tray icon, kills Node.js server, and removes them from startup. |
-| **`Install_Clean_Driver.bat`** | 🔵 **Clean Driver Installer.** For fresh Windows installs. Installs pure driver in 2 seconds via `PnPUtil`. |
-| **`Topping_DAC_Manager.bat`** | 🟣 **Interactive Manager (RU/EN).** Diagnostics, latency test, 1-time buffer change, backup, and rollback. |
-| **`Restore_Default_Settings.bat`** | 🔄 **1-Click Rollback.** Restores standard tray panel and autostart if ever needed. |
-| **`Driver/`** | 📦 Certified genuine Thesycon kernel driver files (`.inf`, `.sys`, `.cat`). |
-| **`ASIO/`** | 🎵 Pure ASIO direct output libraries for Foobar2000, AIMP, Cubase, FL Studio, Reaper. |
-| **`tests/`** | 🧪 Automated test suites (`Run-AllTests.ps1`, AST syntax validation, Authenticode verification). |
+| **`Topping_Debloat_Tweak.bat`** | рџџў **Primary 1-Click Tweak.** Closes tray icon, kills Node.js server, and removes them from startup. |
+| **`Install_Clean_Driver.bat`** | рџ”µ **Clean Driver Installer.** For fresh Windows installs. Installs pure driver in 2 seconds via `PnPUtil`. |
+| **`Topping_DAC_Manager.bat`** | рџџЈ **Interactive Manager (RU/EN).** Diagnostics, latency test, 1-time buffer change, backup, and rollback. |
+| **`Restore_Default_Settings.bat`** | рџ”„ **1-Click Rollback.** Restores standard tray panel and autostart if ever needed. |
+| **`Driver/`** | рџ“¦ Certified genuine Thesycon kernel driver files (`.inf`, `.sys`, `.cat`). |
+| **`ASIO/`** | рџЋµ Pure ASIO direct output libraries for Foobar2000, AIMP, Cubase, FL Studio, Reaper. |
+| **`tests/`** | рџ§Є Automated test suites (`Run-AllTests.ps1`, AST syntax validation, Authenticode verification). |
 
 ---
 
-## 🎯 Supported TOPPING Devices
+## рџЋЇ Supported TOPPING Devices
 
 Compatible with all generations of TOPPING USB DACs and headphone amplifiers:
 
 ```
-[ DX Series ] ── DX1, DX3 Pro, DX3 Pro+, DX5, DX5 Lite, DX7 Pro, DX7 Pro+, DX9
-[ E/L Series] ── E30, E30 II, E30 II Lite, E50, E70, E70 Velvet, L30, L50
-[ D Series  ] ── D10, D10s, D10 Balanced, D50, D50s, D50 III, D70, D70 Pro, D90, D90SE, D90 III
-[ Portable  ] ── G5, NX4 DSD
+[ DX Series ] в”Ђв”Ђ DX1, DX3 Pro, DX3 Pro+, DX5, DX5 Lite, DX7 Pro, DX7 Pro+, DX9
+[ E/L Series] в”Ђв”Ђ E30, E30 II, E30 II Lite, E50, E70, E70 Velvet, L30, L50
+[ D Series  ] в”Ђв”Ђ D10, D10s, D10 Balanced, D50, D50s, D50 III, D70, D70 Pro, D90, D90SE, D90 III
+[ Portable  ] в”Ђв”Ђ G5, NX4 DSD
 ```
 
 ---
 
-## 🔄 100% Reversible and Safe
+## рџ”„ 100% Reversible and Safe
 
 > [!IMPORTANT]
 > Every change is completely safe and reversible in 1 click.  
@@ -152,22 +152,23 @@ Compatible with all generations of TOPPING USB DACs and headphone amplifiers:
 
 ---
 
-## 📚 Technical Documentation & Universal AI Handoff
+## рџ“љ Technical Documentation & Universal AI Handoff
 
 For contributors, system engineers, and AI coding agents:
-- **[AGENTS.md](AGENTS.md)** — Universal instructions and constraints for AI coding agents.
-- **[ARCHITECTURE.md](docs/architecture/ARCHITECTURE.md)** — Deep dive into the kernel driver stack and PnP mechanisms.
-- **[PROJECT_STATE.md](docs/project/PROJECT_STATE.md)** — Living project status, test logs, and handoff state.
-- **[DECISIONS.md](docs/architecture/DECISIONS.md)** — Architectural Decision Records (ADRs).
-- **[KNOWN_ISSUES.md](docs/guides/KNOWN_ISSUES.md)** — Known quirks and troubleshooting workarounds.
-- **[ROADMAP.md](docs/project/ROADMAP.md)** — Future development milestones and features.
-- **[DEVELOPMENT.md](docs/development/DEVELOPMENT.md)** — Build and test guide.
-- **[CONTRIBUTING.md](docs/development/CONTRIBUTING.md)** — Contribution and PR guidelines.
-- **[SECURITY.md](docs/security/SECURITY.md)** — Security policy and signature validation.
-- **[SUPPORT.md](docs/guides/SUPPORT.md)** — Troubleshooting and device support.
+- **[AGENTS.md](AGENTS.md)** вЂ” Universal instructions and constraints for AI coding agents.
+- **[ARCHITECTURE.md](docs/architecture/ARCHITECTURE.md)** вЂ” Deep dive into the kernel driver stack and PnP mechanisms.
+- **[PROJECT_STATE.md](docs/project/PROJECT_STATE.md)** вЂ” Living project status, test logs, and handoff state.
+- **[DECISIONS.md](docs/architecture/DECISIONS.md)** вЂ” Architectural Decision Records (ADRs).
+- **[KNOWN_ISSUES.md](docs/guides/KNOWN_ISSUES.md)** вЂ” Known quirks and troubleshooting workarounds.
+- **[ROADMAP.md](docs/project/ROADMAP.md)** вЂ” Future development milestones and features.
+- **[DEVELOPMENT.md](docs/development/DEVELOPMENT.md)** вЂ” Build and test guide.
+- **[CONTRIBUTING.md](docs/development/CONTRIBUTING.md)** вЂ” Contribution and PR guidelines.
+- **[SECURITY.md](docs/security/SECURITY.md)** вЂ” Security policy and signature validation.
+- **[SUPPORT.md](docs/guides/SUPPORT.md)** вЂ” Troubleshooting and device support.
 
 ---
 
-## 📄 License & Credits
+## рџ“„ License & Credits
 * Driver binaries and catalogs are copyrighted by **Thesycon Systemsoftware & Consulting GmbH** and **TOPPING Technology Co., Ltd.**.
 * Toolkit scripts, architecture, tests, and documentation are provided under the MIT License.
+

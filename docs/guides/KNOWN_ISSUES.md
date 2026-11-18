@@ -1,4 +1,4 @@
-# Known Issues and Workarounds
+﻿# Known Issues and Workarounds
 
 ## 1. Windows USB Selective Suspend (Audio Pop on Sleep/Wake)
 - **Symptom:** Brief pop or click when Windows resumes from sleep or powers down the USB root hub.
@@ -17,3 +17,8 @@
 ## 3. Adjusting ASIO Buffer Size without Resident Tray
 - **Symptom:** User needs to change ASIO buffer from 256 samples to 64 or 512 samples.
 - **Solution:** Run `Topping_DAC_Manager.bat` and select `[5] Open Topping Control Panel once`. It launches the control panel window on-demand without keeping it resident after exit.
+
+## 4. Error 1706 on Installation
+- **Symptom:** Installation fails with 'Error 1706. An installation package for Product...'
+- **Cause:** Critical Windows Installer components or MSI support are missing from your stripped-down Windows build.
+- **Workaround:** This optimizer cannot fix a broken OS. You must use a standard Windows ISO or restore missing components via 'DISM /Online /Cleanup-Image /RestoreHealth'.
